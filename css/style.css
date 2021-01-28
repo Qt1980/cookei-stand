@@ -1,112 +1,12 @@
-
-img{
-  width: 150px;
-}
-
-body {
-  background-color: lightgrey;
-  width: 960px;
-  margin: auto;
+body{
+  background-color: salmon;
 }
 
 h1{
-  font-weight: bold;
-  font-size: larger;
-  color: white;
-  background-color: black;
-  opacity: 0.7;
-  margin: 25px;
-  padding: 10px;
-  text-align:center;
-}
+  color:seashell;
+background-color: black;
+margin: 50px;
+font-size: 3em;
+text-align: center;
 
-p{
-  position: relative;
-  right: 200px;
-  bottom: 214px;
-  left: 170px;
-  font-size: large;
-}
-
-.p{
-  width: 79%;
-}
-
-h2{
-  position: relative;
-  right: 100px;
-  bottom: 220px;
-  left: 158px;
-  width: 15%;
-  font-weight: bold;
-  font-size: large;
-  margin: 10px;
-  padding: 2px;
-  color: rgb(19, 57, 228);
-  text-align:center;
-}
-
-h3{
-  position: relative;
-  left: 148px;
-  bottom: 220px;
-  width: 15%;
-  font-weight: bold;
-  font-size: large;
-  margin: 10px;
-  color:blue;
-  text-align: center;
-}
-
-h4{
-  position: relative;
-  left: 110px;
-  bottom: 220px;
-  width: 15%;
-  font-weight: bold;
-  font-size: large;
-  margin: 10px;
-  color:blue;
-  text-align:center;
-}
-
-h5{
-  position: relative;
-  left: 158px;
-  bottom: 220px;
-  width: 20%;
-  font-weight:bold;
-  font-size: large;
-  margin: 12px;
-  color:blue;
-  text-align:center;
-}
-
-.ul{
-  position: relative;
-  left: 172px;
-  bottom: 220px;
-  width: 300px;
-
-}
-
-.second-ul{
-  position: relative;
-  bottom: 220px;
-  left: 172px;
-  width: 200px;
-}
-
-.third-ul{
-  position: relative;
-  bottom: 220px;
-  left: 172px;
-  width: 42%;
-}
-
-ol{
-  position: relative;
-  left: 172px;
-  bottom: 220px;
-  width: 25%;
 }
