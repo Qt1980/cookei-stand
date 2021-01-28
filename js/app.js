@@ -1,5 +1,7 @@
 'use strict';
 
+//docs used from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+
 //console.log('Hello Seattle');
 
 //find the min number of customers per hour
@@ -34,18 +36,32 @@
 // Total: 875 cookies
 
 //Locations: Seattle, Tokyo, Dubai, Paris, Lima
+const hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
+
 
 var shop = {
   name: 'Seattle',
   minCustomer: 23,
   maxCustomer: 65,
-  avgCookie: 6.3,
+  avgCookiePerCustomer: 6.3,
+  cookiesSoldPerHour: [],
+  storeTotalPerDay: 0,
 
-  totalCustomer: function() {
-    return this.maxCustomer + this.minCustomer;
+  randoCustomerPerHour: function() {
+    return Math.floor(Math.random() * (this.maxCustomer - this.minCustomer + 1) +this.minCustomer);
+  },
+
+  addCookiesSoldPerHour: function() {
+    for (var i = 0; i < hours.length; i++) {
+      let randoCustomerForOneHour = this.randoCustomerPerHour();
+      let cookiesPerHour = randoCustomerForOneHour * this.avgCookiePerCustomer;
+      shop.cookiesSoldPerHour.push(cookiesPerHour);
+    }
+  },
+  render: function() {
   }
 };
-shop.totalCustomer();
-console.log(shop.totalCustomer());
 
 
+//console.log(shop.randoCustomerPerHour());
+console.log(cookiesSoldPerHour);
