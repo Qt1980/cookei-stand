@@ -47,21 +47,23 @@ var shop = {
   cookiesSoldPerHour: [],
   storeTotalPerDay: 0,
 
-  randoCustomerPerHour: function() {
-    return Math.floor(Math.random() * (this.maxCustomer - this.minCustomer + 1) +this.minCustomer);
+  randoCustomerPerHour: function () {
+    return Math.floor(Math.random() * (this.maxCustomer - this.minCustomer + 1) + this.minCustomer);
   },
 
-  addCookiesSoldPerHour: function() {
+  addCookiesSoldPerHour: function () {
     for (var i = 0; i < hours.length; i++) {
       let randoCustomerForOneHour = this.randoCustomerPerHour();
-      let cookiesPerHour = randoCustomerForOneHour * this.avgCookiePerCustomer;
+      let cookiesPerHour =  Math.floor(randoCustomerForOneHour * this.avgCookiePerCustomer) + 1;
       shop.cookiesSoldPerHour.push(cookiesPerHour);
     }
+    console.log(this.cookiesSoldPerHour);
   },
-  render: function() {
-  }
+  render: function () {
+    this.addCookiesSoldPerHour();
+    this.randoCustomerPerHour();
+  },
 };
+shop.render();
 
-
-//console.log(shop.randoCustomerPerHour());
-console.log(cookiesSoldPerHour);
+console.log(shop);
