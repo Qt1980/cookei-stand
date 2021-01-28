@@ -8,5 +8,16 @@ background-color: black;
 margin: 50px;
 font-size: 3em;
 text-align: center;
+}
 
+h2{
+  font-size: 3em;
+}
+
+ul{
+  font-size: 40px;
+}
+
+img{
+  margin: auto;
 }

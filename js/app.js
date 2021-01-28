@@ -15,25 +15,39 @@
 // store the results for each location in a separate array, maybe as the property of the object location
 
 // display the values of each array as unordered lists in the browser
-// calculate the sum of these hourly totals. Example:
+// calculate the sum of these hourly totals.
 
-// Seattle
+// Tokyo	3	24	1.2
+// Dubai	11	38	3.7
+// Paris	20	38	2.3
+// Lima	2	16	4.6
 
-// 6am: 16 cookies
-// 7am: 20 cookies
-// 8am: 35 cookies
-// 9am: 48 cookies
-// 10am: 56 cookies
-// 11am: 77 cookies
-// 12pm: 93 cookies
-// 1pm: 144 cookies
-// 2pm: 119 cookies
-// 3pm: 84 cookies
-// 4pm: 61 cookies
-// 5pm: 23 cookies
-// 6pm: 42 cookies
-// 7pm: 57 cookies
-// Total: 875 cookies
+let myContainer = document.getElementById('container');
+let seattleList = document.getElementById('seattle');
+//console.log(myContainer);
+//console.log(seattle);
+
+let section = document.createElement('section');
+myContainer.appendChild(section);
+
+let img = document.createElement('img');
+img.src = 'img/salmon.png';
+img.alt = 'Salmon cookie logo';
+img.title = 'Salmon Logo';
+
+section.appendChild(img);
+
+let article =document.createElement('article');
+section.appendChild(article);
+
+let h2 = document.createElement('h2');
+h2.textContent = 'London Shop';
+article.appendChild(h2);
+
+let p = document.createElement('p');
+p.textContent = 'Welcome to the Seattle Shop where you can find the cookies that set the world on fire! Salmon cookies are here and here to stay! Lucky for you these cookies have been so popular that we are now in a position to expand to four new locations';
+article.appendChild(p);
+
 
 //Locations: Seattle, Tokyo, Dubai, Paris, Lima
 const hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
