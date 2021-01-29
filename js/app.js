@@ -81,3 +81,119 @@ var shop = {
 shop.render();
 
 console.log(shop);
+
+var shop = {
+  name: 'Tokyo',
+  minCustomer: 3,
+  maxCustomer: 24,
+  avgCookiePerCustomer: 1.2,
+  cookiesSoldPerHour: [],
+  storeTotalPerDay: 0,
+
+  randoCustomerPerHour: function () {
+    return Math.floor(Math.random() * (this.maxCustomer - this.minCustomer + 1) + this.minCustomer);
+  },
+
+  addCookiesSoldPerHour: function () {
+    for (var i = 0; i < hours.length; i++) {
+      let randoCustomerForOneHour = this.randoCustomerPerHour();
+      let cookiesPerHour =  Math.floor(randoCustomerForOneHour * this.avgCookiePerCustomer) + 1;
+      shop.cookiesSoldPerHour.push(cookiesPerHour);
+    }
+    console.log(this.cookiesSoldPerHour);
+  },
+  render: function () {
+    this.addCookiesSoldPerHour();
+    this.randoCustomerPerHour();
+  },
+};
+shop.render();
+
+console.log(shop);
+
+var shop = {
+  name: 'Dubai',
+  minCustomer: 11,
+  maxCustomer: 38,
+  avgCookiePerCustomer: 3.7,
+  cookiesSoldPerHour: [],
+  storeTotalPerDay: 0,
+
+  randoCustomerPerHour: function () {
+    return Math.floor(Math.random() * (this.maxCustomer - this.minCustomer + 1) + this.minCustomer);
+  },
+
+  addCookiesSoldPerHour: function () {
+    for (var i = 0; i < hours.length; i++) {
+      let randoCustomerForOneHour = this.randoCustomerPerHour();
+      let cookiesPerHour =  Math.floor(randoCustomerForOneHour * this.avgCookiePerCustomer) + 1;
+      shop.cookiesSoldPerHour.push(cookiesPerHour);
+    }
+    console.log(this.cookiesSoldPerHour);
+  },
+  render: function () {
+    this.addCookiesSoldPerHour();
+    this.randoCustomerPerHour();
+  },
+};
+shop.render();
+
+console.log(shop);
+
+var shop = {
+  name: 'Paris',
+  minCustomer: 20,
+  maxCustomer: 38,
+  avgCookiePerCustomer: 2.3,
+  cookiesSoldPerHour: [],
+  storeTotalPerDay: 0,
+
+  randoCustomerPerHour: function () {
+    return Math.floor(Math.random() * (this.maxCustomer - this.minCustomer + 1) + this.minCustomer);
+  },
+
+  addCookiesSoldPerHour: function () {
+    for (var i = 0; i < hours.length; i++) {
+      let randoCustomerForOneHour = this.randoCustomerPerHour();
+      let cookiesPerHour =  Math.floor(randoCustomerForOneHour * this.avgCookiePerCustomer) + 1;
+      shop.cookiesSoldPerHour.push(cookiesPerHour);
+    }
+    console.log(this.cookiesSoldPerHour);
+  },
+  render: function () {
+    this.addCookiesSoldPerHour();
+    this.randoCustomerPerHour();
+  },
+};
+shop.render();
+
+console.log(shop);
+
+var shop = {
+  name: 'Lima',
+  minCustomer: 2,
+  maxCustomer: 16,
+  avgCookiePerCustomer: 4.6,
+  cookiesSoldPerHour: [],
+  storeTotalPerDay: 0,
+
+  randoCustomerPerHour: function () {
+    return Math.floor(Math.random() * (this.maxCustomer - this.minCustomer + 1) + this.minCustomer);
+  },
+
+  addCookiesSoldPerHour: function () {
+    for (var i = 0; i < hours.length; i++) {
+      let randoCustomerForOneHour = this.randoCustomerPerHour();
+      let cookiesPerHour =  Math.floor(randoCustomerForOneHour * this.avgCookiePerCustomer) + 1;
+      shop.cookiesSoldPerHour.push(cookiesPerHour);
+    }
+    console.log(this.cookiesSoldPerHour);
+  },
+  render: function () {
+    this.addCookiesSoldPerHour();
+    this.randoCustomerPerHour();
+  },
+};
+shop.render();
+
+console.log(shop);
