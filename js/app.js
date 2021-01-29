@@ -53,7 +53,7 @@ article.appendChild(p);
 const hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 
 
-var shop = {
+var seattle = {
   name: 'Seattle',
   minCustomer: 23,
   maxCustomer: 65,
@@ -78,11 +78,11 @@ var shop = {
     this.randoCustomerPerHour();
   },
 };
-shop.render();
+seattle.render();
 
 console.log(shop);
 
-var shop = {
+var tokyo = {
   name: 'Tokyo',
   minCustomer: 3,
   maxCustomer: 24,
@@ -107,11 +107,11 @@ var shop = {
     this.randoCustomerPerHour();
   },
 };
-shop.render();
+tokyo.render();
 
 console.log(shop);
 
-var shop = {
+var dubai = {
   name: 'Dubai',
   minCustomer: 11,
   maxCustomer: 38,
@@ -136,11 +136,11 @@ var shop = {
     this.randoCustomerPerHour();
   },
 };
-shop.render();
+dubai.render();
 
 console.log(shop);
 
-var shop = {
+var paris = {
   name: 'Paris',
   minCustomer: 20,
   maxCustomer: 38,
@@ -165,11 +165,11 @@ var shop = {
     this.randoCustomerPerHour();
   },
 };
-shop.render();
+paris.render();
 
 console.log(shop);
 
-var shop = {
+var lima = {
   name: 'Lima',
   minCustomer: 2,
   maxCustomer: 16,
@@ -180,7 +180,6 @@ var shop = {
   randoCustomerPerHour: function () {
     return Math.floor(Math.random() * (this.maxCustomer - this.minCustomer + 1) + this.minCustomer);
   },
-
   addCookiesSoldPerHour: function () {
     for (var i = 0; i < hours.length; i++) {
       let randoCustomerForOneHour = this.randoCustomerPerHour();
@@ -194,6 +193,6 @@ var shop = {
     this.randoCustomerPerHour();
   },
 };
-shop.render();
+lima.render();
 
 console.log(shop);
