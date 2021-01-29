@@ -16,13 +16,13 @@ h2{
 
 ul{
   font-size: 1em;
-  display: flex;
+  /* display: flex; */
 }
 
 img{
   margin: auto;
 }
 li{
-  border: 1px solid black;
-  width: 100px;
+  /* border: 1px solid black;
+  width: 100px; */
 }
