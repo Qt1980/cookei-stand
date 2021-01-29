@@ -69,7 +69,7 @@ var seattle = {
     for (var i = 0; i < hours.length; i++) {
       let randoCustomerForOneHour = this.randoCustomerPerHour();
       let cookiesPerHour =  Math.floor(randoCustomerForOneHour * this.avgCookiePerCustomer) + 1;
-      shop.cookiesSoldPerHour.push(cookiesPerHour);
+      seattle.cookiesSoldPerHour.push(cookiesPerHour);
     }
     console.log(this.cookiesSoldPerHour);
   },
@@ -80,7 +80,7 @@ var seattle = {
 };
 seattle.render();
 
-console.log(shop);
+console.log(seattle);
 
 var tokyo = {
   name: 'Tokyo',
@@ -98,7 +98,7 @@ var tokyo = {
     for (var i = 0; i < hours.length; i++) {
       let randoCustomerForOneHour = this.randoCustomerPerHour();
       let cookiesPerHour =  Math.floor(randoCustomerForOneHour * this.avgCookiePerCustomer) + 1;
-      shop.cookiesSoldPerHour.push(cookiesPerHour);
+      tokyo.cookiesSoldPerHour.push(cookiesPerHour);
     }
     console.log(this.cookiesSoldPerHour);
   },
@@ -109,7 +109,7 @@ var tokyo = {
 };
 tokyo.render();
 
-console.log(shop);
+console.log(tokyo);
 
 var dubai = {
   name: 'Dubai',
@@ -127,7 +127,7 @@ var dubai = {
     for (var i = 0; i < hours.length; i++) {
       let randoCustomerForOneHour = this.randoCustomerPerHour();
       let cookiesPerHour =  Math.floor(randoCustomerForOneHour * this.avgCookiePerCustomer) + 1;
-      shop.cookiesSoldPerHour.push(cookiesPerHour);
+      dubai.cookiesSoldPerHour.push(cookiesPerHour);
     }
     console.log(this.cookiesSoldPerHour);
   },
@@ -138,7 +138,7 @@ var dubai = {
 };
 dubai.render();
 
-console.log(shop);
+console.log(dubai);
 
 var paris = {
   name: 'Paris',
@@ -156,7 +156,7 @@ var paris = {
     for (var i = 0; i < hours.length; i++) {
       let randoCustomerForOneHour = this.randoCustomerPerHour();
       let cookiesPerHour =  Math.floor(randoCustomerForOneHour * this.avgCookiePerCustomer) + 1;
-      shop.cookiesSoldPerHour.push(cookiesPerHour);
+      paris.cookiesSoldPerHour.push(cookiesPerHour);
     }
     console.log(this.cookiesSoldPerHour);
   },
@@ -167,7 +167,7 @@ var paris = {
 };
 paris.render();
 
-console.log(shop);
+console.log(paris);
 
 var lima = {
   name: 'Lima',
@@ -184,7 +184,7 @@ var lima = {
     for (var i = 0; i < hours.length; i++) {
       let randoCustomerForOneHour = this.randoCustomerPerHour();
       let cookiesPerHour =  Math.floor(randoCustomerForOneHour * this.avgCookiePerCustomer) + 1;
-      shop.cookiesSoldPerHour.push(cookiesPerHour);
+      lima.cookiesSoldPerHour.push(cookiesPerHour);
     }
     console.log(this.cookiesSoldPerHour);
   },
@@ -195,4 +195,4 @@ var lima = {
 };
 lima.render();
 
-console.log(shop);
+console.log(lima);
