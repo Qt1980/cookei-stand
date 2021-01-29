@@ -15,9 +15,14 @@ h2{
 }
 
 ul{
-  font-size: 40px;
+  font-size: 1em;
+  display: flex;
 }
 
 img{
   margin: auto;
+}
+li{
+  border: 1px solid black;
+  width: 100px;
 }
