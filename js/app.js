@@ -74,7 +74,7 @@ var seattle = {
     for (var i = 0; i < hours.length; i++) {
       let randoCustomerForOneHour = this.randoCustomerPerHour();
       let cookiesPerHour =  Math.floor(randoCustomerForOneHour * this.avgCookiePerCustomer) + 1;
-      seattle.cookiesSoldPerHour.push(cookiesPerHour);
+      this.cookiesSoldPerHour.push(cookiesPerHour);
       this.storeTotalPerDay += cookiesPerHour;
     }
   },
