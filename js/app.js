@@ -93,7 +93,7 @@ var seattle = {
   },
 };
 seattle.render();
-console.log(seattle);
+console.log(seattle.Seattle);
 
 var tokyo = {
   name: 'Tokyo',
