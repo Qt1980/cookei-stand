@@ -57,6 +57,16 @@ article.appendChild(p);
 //Locations: Seattle, Tokyo, Dubai, Paris, Lima
 const hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 
+function shopLocation (name, minCustomer, maxCustomer, avgCookiePerCustomer,) {
+  this.name = name;
+  this.minCustomer = minCustomer;
+  this.maxCustomer = maxCustomer;
+  this.avgCookiePerCustomer = avgCookiePerCustomer;
+  //this.storeTotalPerDay = storeTotalPerDay;
+}
+
+let firstShop = new shopLocation ('Seattle', '23', '65', '6.3')
+console.log(firstShop);
 
 var seattle = {
   name: 'Seattle',
@@ -93,7 +103,6 @@ var seattle = {
   },
 };
 seattle.render();
-console.log(seattle.Seattle);
 
 var tokyo = {
   name: 'Tokyo',
