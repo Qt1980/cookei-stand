@@ -64,9 +64,45 @@ function ShopLocation(name, minCustomer, maxCustomer, avgCookiePerCustomer) {
   this.storeTotalPerDay = storeTotalPerDay;
 }
 
+
 let li = document.createElement('li');
 li.textContent = `Total: ${this.storeTotalPerDay} cookies`;
 seattleList.appendChild(li);
+
+let firstShop = new shopLocation ('Seattle', '23', '65', '6.3')
+console.log(firstShop);
+
+var seattle = {
+  name: 'Seattle',
+  minCustomer: 23,
+  maxCustomer: 65,
+  avgCookiePerCustomer: 6.3,
+  cookiesSoldPerHour: [],
+  storeTotalPerDay: 0,
+
+  randoCustomerPerHour: function () {
+    return Math.floor(Math.random() * (this.maxCustomer - this.minCustomer + 1) + this.minCustomer);
+  },
+
+  addCookiesSoldPerHour: function () {
+    for (var i = 0; i < hours.length; i++) {
+      let randoCustomerForOneHour = this.randoCustomerPerHour();
+      let cookiesPerHour =  Math.floor(randoCustomerForOneHour * this.avgCookiePerCustomer) + 1;
+      this.cookiesSoldPerHour.push(cookiesPerHour);
+      this.storeTotalPerDay += cookiesPerHour;
+    }
+  },
+  render: function () {
+    this.addCookiesSoldPerHour();
+    for (let i = 0; i < hours.length; i++) {
+      let li = document.createElement('li');
+      li.textContent = `${hours[i]}: ${this.cookiesSoldPerHour[i]} cookies`;
+      seattleList.appendChild(li);
+    }
+    let li =document.createElement('li');
+    li.textContent = `Total: ${this.storeTotalPerDay} cookies`;
+    seattleList.appendChild(li);
+
 
 ShopLocation.prototype.randoCustomerPerHour = function () {
   return Math.floor(Math.random() * (this.maxCustomer - this.minCustomer + 1) + this.minCustomer);
