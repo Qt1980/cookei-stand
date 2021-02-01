@@ -72,8 +72,6 @@ function ShopLocation(name, minCustomer, maxCustomer, avgCookiePerCustomer) {
   shopLocationTotals.push(this);
   this.storeTotalPerDay = 0;
 }
-<<<<<<< HEAD
-=======
 
 
 let li = document.createElement('li');
@@ -115,7 +113,6 @@ var seattle = {
     seattleList.appendChild(li);
 
 
->>>>>>> 6b1967e3b52813cac2d7f4b3aad2c962d5672baf
 ShopLocation.prototype.randoCustomerPerHour = function () {
   return Math.floor(Math.random() * (this.maxCustomer - this.minCustomer + 1) + this.minCustomer);
 };
