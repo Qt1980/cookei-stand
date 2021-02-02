@@ -63,7 +63,15 @@ function headerRender(){
     th.textContent = hours[i];
     tr.appendChild(th);
   }
+  th = document.createElement('th');
+  th.textContent = 'Store Daily Totals';
+  tr.appendChild(th);
+  head.appendChild(tr);
+  table.appendChild(head);
 }
+
+headerRender();
+
 let seattle = new ShopLocation ('Seattle', 23, 65, 6.3);
 let tokyo = new ShopLocation ('Tokyo', 3, 24, 1.2);
 let dubai = new ShopLocation ('Dubai',	11,	38,	3.7);
