@@ -19,7 +19,7 @@ function ShopLocation(name, minCustomer, maxCustomer, avgCookiePerCustomer) {
   this.cookiesSoldPerHour = [];
   this.storeTotalPerDay = 0;
   shopLocationTotals.push(this);
-  this.locationRender()
+  this.locationRender();
 }
 
 ShopLocation.prototype.randoCustomerPerHour = function () {
@@ -38,20 +38,32 @@ ShopLocation.prototype.addCookiesSoldPerHour = function () {
 ShopLocation.prototype.locationRender = function() {
   this.addCookiesSoldPerHour();
   let tr = document.createElement('tr'); // creating a row to be rendered on the sales page
-  let th = document.createElement('th'; //creating the actual cells like in a speadsheet
+  let th = document.createElement('th'); //creating the actual cells like in a speadsheet
   th.textContent = this.name;//assignnig the value of 'th' as this.name which is the naes of each city
-  tr.appendChild.prototype(th);//appending the 'th' to the row so that it can be rendered.
-  for (let i =0; i < this.cookiesSoldPerHour.length; i++);
-}
-ShopLocation.prototype.render = function () {
-  this.addCookiesSoldPerHour();
-  for (let i = 0; i < hours.length; i++) {
-    let li = document.createElement('li');
-    li.textContent = `${hours[i]}: ${this.cookiesSoldPerHour[i]} cookies`;
-    //seattleList.appendChild(li);
+  tr.appendChild(th);//appending the 'th' to the row so that it can be rendered.
+  for (let i = 0; i < this.cookiesSoldPerHour.length; i++){//itirating over the array to get cookies sold per hour
+    let td = document.createElement('td');//creating table data.
+    td.textContent = this.cookiesSoldPerHour[i];//giving table data content from the cookiessoldperhour array
+    tr.appendChild(td);
   }
+  let td = document.createElement('td');
+  td.textContent = this.storeTotalPerDay;
+  tr.appendChild(td);
+  body.appendChild(tr);//appending the row to the table body. The row is the child of the body
 };
 
+function headerRender(){
+  let head = document.createElement('thead');
+  let tr = document.createElement('tr');
+  let th = document.createElement('th');
+  th.textContent = 'City Location';
+  tr.appendChild(th);
+  for(let i = 0; i < hours.length; i++){
+    th = document.createElement('th');
+    th.textContent = hours[i];
+    tr.appendChild(th);
+  }
+}
 let seattle = new ShopLocation ('Seattle', 23, 65, 6.3);
 let tokyo = new ShopLocation ('Tokyo', 3, 24, 1.2);
 let dubai = new ShopLocation ('Dubai',	11,	38,	3.7);
