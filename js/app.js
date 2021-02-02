@@ -7,9 +7,10 @@
 const hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 const shopLocationTotals =[];
 let table = document.getElementById('table');
-console.log(table);
+//console.log(table);
 let body =document.createElement('tbody');
-console.log(body);
+//console.log(body);
+table.appendChild(body);
 
 function ShopLocation(name, minCustomer, maxCustomer, avgCookiePerCustomer) {
   this.name = name;
