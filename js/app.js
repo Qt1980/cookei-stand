@@ -91,25 +91,24 @@ ShopLocation.prototype.render = function () {
     //seattleList.appendChild(li);
   }
 };
-let foo = new ShopLocation ('Seattle', 23, 65, 6.3);
-let bar = new ShopLocation ('Tokyo', 3, 24, 1.2);
+
+let seattle = new ShopLocation ('Seattle', 23, 65, 6.3);
+let tokyo = new ShopLocation ('Tokyo', 3, 24, 1.2);
+let dubai = new ShopLocation ('Dubai',	11,	38,	3.7);
+let paris = new ShopLocation ('Paris', 20, 38, 2.3);
+let lima = new ShopLocation ('Lima', 2, 16, 4.6);
 
 
 
 
 
+  //   let tr = document.createElement('tr');
+  //  // cookieCrumble.appendChild(tr);
 
+  //   let th = document.createElement('th');
+  //   th.textContent = this.name;
 
-
-
-
-    let tr = document.createElement('tr');
-   // cookieCrumble.appendChild(tr);
-
-    let th = document.createElement('th');
-    th.textContent = this.name;
-
-    tr.appendChild(th);
+  //   tr.appendChild(th);
 
 
     // for (let i = 0; i < this.storeTotalPerDay.length; i++) {
@@ -122,14 +121,14 @@ let bar = new ShopLocation ('Tokyo', 3, 24, 1.2);
     // tr.appendChild(td);
 //};
 //};
-new ShopLocation('Seattle', 23, 65, 6.3);
 
-function renderAll() {
-  for (let i =0; i < shopLocationTotals.length; i++) {
-  shopLocationTotals[i].render();
-}
-}
-renderAll();
+
+// function renderAll() {
+//   for (let i =0; i < shopLocationTotals.length; i++) {
+//   shopLocationTotals[i].render();
+// }
+// }
+// renderAll();
 
 // let li = document.createElement('li');
 // li.textContent = `Total: ${this.storeTotalPerDay} cookies`;
