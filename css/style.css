@@ -14,15 +14,11 @@ h2{
   font-size: 3em;
 }
 
-ul{
-  font-size: 1em;
-  /* display: flex; */
-}
-
 img{
   margin: auto;
 }
-li{
-  /* border: 1px solid black;
-  width: 100px; */
+
+.table{
+  border: black;
+
 }
