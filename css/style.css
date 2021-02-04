@@ -3,22 +3,37 @@ body{
 }
 
 h1{
-  color:seashell;
+color:seashell;
 background-color: black;
 margin: 50px;
 font-size: 3em;
 text-align: center;
 }
 
-h2{
-  font-size: 3em;
+nav{
+  font-size: 20px;
+  margin: 10px;
 }
 
+/* index.html img file */
 img{
   margin: auto;
 }
 
-.table{
-  border: black;
+table{
+  /* border: thin rgb(24, 2, 2) solid; */
+  margin: auto;
+  font-size: 30px;
+}
+
+tr{
+  border: thin black solid;
+  margin: 10px;
 
 }
+
+td,th{
+  border: thin black solid;
+  margin: auto;
+}
+
