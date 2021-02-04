@@ -72,6 +72,7 @@ function headerRender(){
   table.appendChild(head);
 }
 
+//potential function to render footer totals below
 // function footerRender(){
 //   let footer = document.createElement('tfoot');
 //   let tr = document.createElement('tr');
