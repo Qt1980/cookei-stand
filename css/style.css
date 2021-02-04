@@ -1,24 +1,42 @@
-body{
+/* entire document */
+ body{
   background-color: salmon;
 }
 
-h1{
-  color:seashell;
-background-color: black;
-margin: 50px;
-font-size: 3em;
-text-align: center;
+/* welcome to cookie stand */
+header{ 
+  background-color: slategray;
+  height: 120px;
 }
 
-h2{
-  font-size: 3em;
+h1{
+  color: bisque;
+  text-align: center;
+  padding-top: 48px;
+  font-size: 2em;
+}
+
+nav{
+  border: thin solid black;
+  width: 300px;
+
+}
+
+table{
+  border: thin black solid;
+  margin: auto;
+  font-size: 30px;
+}
+
+tr{
+  border: thin black solid;
+}
+
+th, td{
+  border: thin black solid;
+  padding: 10px;
 }
 
 img{
-  margin: auto;
-}
-
-.table{
-  border: black;
 
 }
