@@ -72,27 +72,27 @@ function headerRender(){
   table.appendChild(head);
 }
 
-function footerRender(){
-  let footer = document.createElement('tfoot');
-  let tr = document.createElement('tr');
-  let th = document.createElement('th');
-  th.textContent = 'Hourly Store Totals';
-  tr.appendChild(th);
+// function footerRender(){
+//   let footer = document.createElement('tfoot');
+//   let tr = document.createElement('tr');
+//   let th = document.createElement('th');
+//   th.textContent = 'Hourly Store Totals';
+//   tr.appendChild(th);
 
-  for (let i =0; i < hours.length; i++){
-    let sum =0;
-    for (let j = 0; j < shopLocationTotals[i].length; j++);
-    sum += hours[j][i];
-  }
+//   for (let i =0; i < hours.length; i++){
+//     let sum =0;
+//     for (let j = 0; j < shopLocationTotals[i].length; j++);
+//     sum += hours[j][i];
+//   }
 
-  th = document.createElement('th');
-  th.textContent = 'Grand Total';
-  tr.appendChild(th);
-  body.appendChild.name(footer);
-  table.appendChild(body); 
-}
+//   th = document.createElement('th');
+//   th.textContent = 'Grand Total';
+//   tr.appendChild(th);
+//   body.appendChild.name(footer);
+//   table.appendChild(body); 
+// }
 
-footerRender();
+// footerRender();
 headerRender();
 
 let seattle = new ShopLocation ('Seattle', 23, 65, 6.3);
