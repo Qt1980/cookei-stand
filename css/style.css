@@ -1,8 +1,30 @@
-body{
+/* entire document */
+ body{
   background-color: salmon;
 }
 
+/* welcome to cookie stand */
+header{ 
+  background-color: slategray;
+  height: 120px;
+}
+
 h1{
+
+  color: bisque;
+  text-align: center;
+  padding-top: 48px;
+  font-size: 2em;
+}
+
+nav{
+  border: thin solid black;
+  width: 300px;
+
+}
+
+table{
+border: thin black solid;
 color:seashell;
 background-color: black;
 margin: 50px;
@@ -18,6 +40,21 @@ nav{
 /* index.html img file */
 img{
   margin: auto;
+  font-size: 30px;
+}
+
+
+tr{
+  border: thin black solid;
+}
+
+th, td{
+  border: thin black solid;
+  padding: 10px;
+}
+
+img{
+
 }
 
 table{
@@ -40,4 +77,5 @@ td,th{
 footer{
   border: thin black solid;
 }
+
 
