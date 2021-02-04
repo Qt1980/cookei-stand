@@ -28,12 +28,16 @@ table{
 
 tr{
   border: thin black solid;
-  margin: 10px;
+  padding: 10px;
 
 }
 
 td,th{
   border: thin black solid;
-  margin: auto;
+  padding: 10px;
+}
+
+footer{
+  border: thin black solid;
 }
 
