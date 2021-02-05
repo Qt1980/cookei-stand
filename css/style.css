@@ -55,7 +55,7 @@ main li{
 }
 
 main p{
-  height: 300px;
+  /* height: 300px; */
   
 
 }
@@ -67,17 +67,25 @@ main p{
 
 .family{
   position: relative;
-  left: 130px;
+  left: 30px;
+  float: left;
+}
+
+#image-container{
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+}
+div{
+  width: 600px;
+ 
 }
 .frosty{
-  position: relative;
-  left: 990px;
-  bottom: 512px
+  float: left;
 }
 
 .p{
-  position: relative;
-  left: 450px;
+  float: right;
 }
 
 
