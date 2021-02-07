@@ -1,30 +1,101 @@
 /* entire document */
  body{
   background-color: salmon;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* welcome to cookie stand */
 header{ 
   background-color: slategray;
-  height: 120px;
+  height: 135px;
 }
 
+<<<<<<< HEAD
+/* h1{
+=======
 h1{
 
+>>>>>>> 2bfa0878ee6b286a687d7af46affbcfe5dd9cb45
   color: bisque;
-  text-align: center;
-  padding-top: 48px;
+  text-align: left;
+  padding-top: 15px;
   font-size: 2em;
-}
+} */
 
 nav{
-  border: thin solid black;
-  width: 300px;
+  width: 960px;
+  margin: auto;
+}
+
+header img{
+  margin-top: 15px;
+  float: left;
+}
+
+header span{
+  display: inline-block;
+  line-height: 100px;
+  margin-left: 90px;
+}
+
+header span:nth-child(2){
+  margin-left: 30px;
+}
+
+main{
+  width: 960px;
+}
+
+main img{
+  margin-top: 30px;
+}
+
+main li:first-child{
+  margin-left: 0px;
+}
+
+main li{
+  margin-left: 30px;
+  float: left;
+}
+
+main p{
+  /* height: 300px; */
+  
 
 }
 
+.logo{
+  position: relative;
+  right: 450px;
+}
+
+.family{
+  position: relative;
+  left: 30px;
+  float: left;
+}
+
+#image-container{
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+}
+div{
+  width: 600px;
+ 
+}
+.frosty{
+  float: left;
+}
+
+.p{
+  float: right;
+}
+
+
 table{
-border: thin black solid;
+border: thin red solid;
 color:seashell;
 background-color: black;
 margin: 50px;
@@ -52,6 +123,8 @@ th, td{
   border: thin black solid;
   padding: 10px;
 }
+<<<<<<< HEAD
+=======
 
 img{
 
@@ -79,3 +152,4 @@ footer{
 }
 
 
+>>>>>>> 2bfa0878ee6b286a687d7af46affbcfe5dd9cb45
