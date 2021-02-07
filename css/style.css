@@ -10,7 +10,12 @@ header{
   height: 135px;
 }
 
+<<<<<<< HEAD
 /* h1{
+=======
+h1{
+
+>>>>>>> 2bfa0878ee6b286a687d7af46affbcfe5dd9cb45
   color: bisque;
   text-align: left;
   padding-top: 15px;
@@ -90,10 +95,25 @@ div{
 
 
 table{
-  border: thin black solid;
+border: thin black solid;
+color:seashell;
+background-color: black;
+margin: 50px;
+font-size: 3em;
+text-align: center;
+}
+
+nav{
+  font-size: 20px;
+  margin: 10px;
+}
+
+/* index.html img file */
+img{
   margin: auto;
   font-size: 30px;
 }
+
 
 tr{
   border: thin black solid;
@@ -103,3 +123,33 @@ th, td{
   border: thin black solid;
   padding: 10px;
 }
+<<<<<<< HEAD
+=======
+
+img{
+
+}
+
+table{
+  /* border: thin rgb(24, 2, 2) solid; */
+  margin: auto;
+  font-size: 30px;
+}
+
+tr{
+  border: thin black solid;
+  padding: 10px;
+
+}
+
+td,th{
+  border: thin black solid;
+  padding: 10px;
+}
+
+footer{
+  border: thin black solid;
+}
+
+
+>>>>>>> 2bfa0878ee6b286a687d7af46affbcfe5dd9cb45
