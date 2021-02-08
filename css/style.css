@@ -1,26 +1,14 @@
 /* entire document */
- body{
-  background-color: salmon;
+body{
   font-family: Arial, Helvetica, sans-serif;
+  background-color: salmon;
 }
 
-/* welcome to cookie stand */
-header{ 
-  background-color: slategray;
-  height: 135px;
+/* header */
+header{
+  background-color: #444;
+  height: 100px;
 }
-
-<<<<<<< HEAD
-/* h1{
-=======
-h1{
-
->>>>>>> 2bfa0878ee6b286a687d7af46affbcfe5dd9cb45
-  color: bisque;
-  text-align: left;
-  padding-top: 15px;
-  font-size: 2em;
-} */
 
 nav{
   width: 960px;
@@ -42,8 +30,15 @@ header span:nth-child(2){
   margin-left: 30px;
 }
 
+nav a{
+  text-decoration: none;
+  color: #aaa;
+}
+
+/* main */
 main{
   width: 960px;
+  margin: auto;
 }
 
 main img{
@@ -59,97 +54,29 @@ main li{
   float: left;
 }
 
-main p{
-  /* height: 300px; */
-  
-
-}
-
-.logo{
-  position: relative;
-  right: 450px;
-}
-
-.family{
-  position: relative;
-  left: 30px;
-  float: left;
-}
-
-#image-container{
-  display: flex;
-  width: 100vw;
-  justify-content: space-around;
-}
-div{
-  width: 600px;
- 
-}
-.frosty{
-  float: left;
-}
-
-.p{
+main article{
+  width: 50%;
   float: right;
+  margin-top: 30px;
 }
 
-
-table{
-border: thin red solid;
-color:seashell;
-background-color: black;
-margin: 50px;
-font-size: 3em;
-text-align: center;
-}
-
-nav{
+main h2{
+  margin-left: 30px;
   font-size: 20px;
-  margin: 10px;
+  font-style: italic;
 }
 
-/* index.html img file */
-img{
-  margin: auto;
-  font-size: 30px;
+main p{
+  height: 300px;
+  overflow: auto;
+  margin-top: 5px;
+  margin-left: 30px;
+  line-height: 20px;
 }
 
-
-tr{
-  border: thin black solid;
-}
-
-th, td{
-  border: thin black solid;
-  padding: 10px;
-}
-<<<<<<< HEAD
-=======
-
-img{
-
-}
-
-table{
-  /* border: thin rgb(24, 2, 2) solid; */
-  margin: auto;
-  font-size: 30px;
-}
-
-tr{
-  border: thin black solid;
-  padding: 10px;
-
-}
-
-td,th{
-  border: thin black solid;
-  padding: 10px;
-}
 
 footer{
-  border: thin black solid;
+  background-color: #444;
+  height: 130px;
+  margin-top: 30px;
 }
-
-
->>>>>>> 2bfa0878ee6b286a687d7af46affbcfe5dd9cb45
