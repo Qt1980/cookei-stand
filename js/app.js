@@ -10,6 +10,7 @@ let grandTotal = new Array(hours.length+1).fill(0);
 let table = document.getElementById('table');
 let body =document.createElement('tbody');
 table.appendChild(body);
+let myform = document.querySelector('form');
 
 function ShopLocation(name, minCustomer, maxCustomer, avgCookiePerCustomer) {
   this.name = name;
@@ -97,6 +98,18 @@ ShopLocation.prototype.calcTotal = function (){
   }
 };
 
+function handleSubmit(event) {
+  event.preventDefault();
+  let locationName = event.target.location.value;
+  let minCustomer = +event.target.minCustomer.value;
+  let maxCustomer = +event.target.maxCustomer.value;
+  let avgCookiePerCustomer = +event.target.avgCookiePerCustomer.value;
+  let newShop = new ShopLocation(locationName, minCustomer, maxCustomer, avgCookiePerCustomer);
+  newShop.render();
+
+  document.getElementById('table').deleteRow(-1);
+  footerRender();
+}
 let seattle = new ShopLocation ('Seattle', 23, 65, 6.3);
 // seattle.calcTotal();- another way to call the function
 // seattle.locationRender();
@@ -108,3 +121,5 @@ console.log(grandTotal);
 
 headerRender();
 footerRender();
+
+myform.addEventListener('submit', handleSubmit);
