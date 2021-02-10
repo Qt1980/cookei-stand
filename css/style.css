@@ -7,18 +7,30 @@ body{
 header{
   background-color: gray;
   font-size: 35px;
-  height: 100px;
+  height: 150px;
   text-align: center;
   border: 5px solid whitesmoke;
-}
-
-nav>a{
-  padding: 300px;
-  margin: 40px;
 }
 
 nav>img{
   width: 300px;
   margin-right: 60px;
   margin-left: 60px;
+  padding: -200px;
+}
+
+h1{
+  border: solid black;
+  font-size: 2em;
+  margin-left: 1300px;
+  width: 550px;
+}
+
+#one{
+  width: 600px;
+}
+
+article>p{
+  color: aqua;
+  font-size: 30px;
 }
