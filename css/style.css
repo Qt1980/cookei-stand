@@ -46,6 +46,10 @@ nav>img{
   margin-left: 30px;
 }
 
+#two {
+  display: inline-flex;
+}
+
 #two>h2{
   margin-bottom: 20px;
   font-size: 40px;
@@ -58,5 +62,5 @@ nav>img{
 }
 
 #two>img{
-  width: 100px;
+  width: 200px;
 }
