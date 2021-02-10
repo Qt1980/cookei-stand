@@ -2,8 +2,7 @@
 body{
   font-family: Arial, Helvetica, sans-serif;
   background-color: salmon;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin: 50px;
 }
 
 header{
@@ -25,19 +24,39 @@ nav>img{
 #one{
   display: inline-flex;
 }
+
 #one img{
   border: 5px solid blue;
+  margin-top: 30px;
 }
+
 #one>article>h1{
   border: 5px solid yellow;
-  display: inline-flex;
   font-size: 40px;
-  margin-left: 130px;
-  width: 700px;
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 880px;
 }
 
 #one>article>p{
   border: 5px solid green;
   color: aqua;
   font-size: 30px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+#two>h2{
+  margin-bottom: 20px;
+  font-size: 40px;
+  margin-top: 30px;
+}
+
+#two>p{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#two>img{
+  width: 100px;
 }
