@@ -52,6 +52,7 @@ nav>img{
 #two>h1{
   font-size: 40px;
   width: 490px;
+  margin-bottom: -50px;
 }
 
 #two>article>h3{
