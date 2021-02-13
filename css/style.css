@@ -1,9 +1,11 @@
 /* entire document */
- body{
-  background-color: salmon;
+body{
   font-family: Arial, Helvetica, sans-serif;
+  background-color: salmon;
+  margin: 50px;
 }
 
+<<<<<<< HEAD
 /* welcome to cookie stand */
 header{ 
   background-color: slategray;
@@ -35,116 +37,95 @@ header span{
 
 header span:nth-child(2){
   margin-left: 30px;
-}
-
-main{
-  width: 960px;
-}
-
-main img{
-  margin-top: 30px;
-}
-
-main li:first-child{
-  margin-left: 0px;
-}
-
-main li{
-  margin-left: 30px;
-  float: left;
-}
-
-main p{
-  /* height: 300px; */
-  
-
-}
-
-.logo{
-  position: relative;
-  right: 450px;
-}
-
-.family{
-  position: relative;
-  left: 30px;
-  float: left;
-}
-
-#image-container{
-  display: flex;
-  width: 100vw;
-  justify-content: space-around;
-}
-div{
-  width: 600px;
- 
-}
-.frosty{
-  float: left;
-}
-
-.p{
-  float: right;
-}
-
-
-table{
-border: thin red solid;
-color:seashell;
-background-color: black;
-margin: 50px;
-font-size: 3em;
-text-align: center;
-}
-
-nav{
-  font-size: 20px;
-  margin: 10px;
-}
-
-/* index.html img file */
-img{
-  margin: auto;
-  font-size: 30px;
-}
-
-
-tr{
-  border: thin black solid;
-}
-
-th, td{
-  border: thin black solid;
-  padding: 10px;
-}
-<<<<<<< HEAD
 =======
+header{
+  background-color: gray;
+  font-size: 35px;
+  height: 150px;
+  text-align: center;
+  border: 5px solid whitesmoke;
+>>>>>>> 84349ca0998ba0fdb103fe63ec656850aba53f8d
+}
 
-img{
+/* fish and sales link in header */
+nav>img{
+  width: 300px;
+  margin-right: 60px;
+  margin-left: 60px;
+  padding: -200px;
+}
+
+#two{
+  float: right;
+  text-align: center;
+  /* width: 700px; */
+  font-size: 40px;
+  margin-right: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+#family{
+  border: 5px solid blue;
+  /* margin-top: 30px; */
+  float: left;
+  /* margin-bottom: 400px; */
+  margin-top: 100px;
+}
+#frosty{
+  border: 5px solid beige;
+  float: right;
+  margin-right: 600px;
 
 }
 
-table{
-  /* border: thin rgb(24, 2, 2) solid; */
-  margin: auto;
+#four{
+ font-size: 30px;
+ text-align: inherit;
+ width: 700px;
+ float: right;
+ margin-right: 70px;
+}
+
+/* #one>article>h1{
+  border: 5px solid yellow;
+  font-size: 40px;
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 880px;
+}
+
+#one>article>p{
+  border: 5px solid green;
+  color: black;
   font-size: 30px;
-}
+  margin-top: 10px;
+} */
 
-tr{
-  border: thin black solid;
-  padding: 10px;
-
-}
-
-td,th{
-  border: thin black solid;
-  padding: 10px;
-}
-
-footer{
-  border: thin black solid;
+/* #two {
+  display:table;
 }
 
 
->>>>>>> 2bfa0878ee6b286a687d7af46affbcfe5dd9cb45
+
+#two>article>h3{
+  font-size: 30px;
+  margin-bottom: -90px;
+}
+
+#two>article>p{
+  margin-top: 90px;
+  font-size: 30px;
+  width: 200px;
+}
+
+#two>article{
+  background-color:gray;
+} */
+
+
+
+/* #three{
+  display: inline-flex;
+} */
