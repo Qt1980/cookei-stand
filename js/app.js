@@ -110,6 +110,7 @@ function handleSubmit(event) {
   document.getElementById('table').deleteRow(-1);
   footerRender();
 }
+
 let seattle = new ShopLocation ('Seattle', 23, 65, 6.3);
 // seattle.calcTotal();- another way to call the function
 // seattle.locationRender();
