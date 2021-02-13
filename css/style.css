@@ -5,12 +5,46 @@ body{
   margin: 50px;
 }
 
+<<<<<<< HEAD
+/* welcome to cookie stand */
+header{ 
+  background-color: slategray;
+  height: 135px;
+}
+
+/* h1{
+  color: bisque;
+  text-align: left;
+  padding-top: 15px;
+  font-size: 2em;
+} */
+
+nav{
+  width: 960px;
+  margin: auto;
+}
+
+header img{
+  margin-top: 15px;
+  float: left;
+}
+
+header span{
+  display: inline-block;
+  line-height: 100px;
+  margin-left: 90px;
+}
+
+header span:nth-child(2){
+  margin-left: 30px;
+=======
 header{
   background-color: gray;
   font-size: 35px;
   height: 150px;
   text-align: center;
   border: 5px solid whitesmoke;
+>>>>>>> 84349ca0998ba0fdb103fe63ec656850aba53f8d
 }
 
 /* fish and sales link in header */
