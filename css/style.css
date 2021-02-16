@@ -5,19 +5,19 @@ body{
   margin: 50px;
 }
 
-<<<<<<< HEAD
 /* welcome to cookie stand */
 header{ 
   background-color: slategray;
   height: 135px;
 }
 
-/* h1{
+h1{
+  font-family:'Times New Roman', Times, serif;
   color: bisque;
   text-align: left;
   padding-top: 15px;
   font-size: 2em;
-} */
+}
 
 nav{
   width: 960px;
@@ -37,14 +37,6 @@ header span{
 
 header span:nth-child(2){
   margin-left: 30px;
-=======
-header{
-  background-color: gray;
-  font-size: 35px;
-  height: 150px;
-  text-align: center;
-  border: 5px solid whitesmoke;
->>>>>>> 84349ca0998ba0fdb103fe63ec656850aba53f8d
 }
 
 /* fish and sales link in header */
@@ -65,67 +57,56 @@ nav>img{
   margin-bottom: 30px;
 }
 
-
-#family{
-  border: 5px solid blue;
-  /* margin-top: 30px; */
-  float: left;
-  /* margin-bottom: 400px; */
-  margin-top: 100px;
+#three {
+  margin-left: 450px;
+ 
 }
+
 #frosty{
   border: 5px solid beige;
-  float: right;
-  margin-right: 600px;
-
+  margin-left: 730px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 #four{
  font-size: 30px;
- text-align: inherit;
- width: 700px;
- float: right;
- margin-right: 70px;
 }
 
-/* #one>article>h1{
-  border: 5px solid yellow;
-  font-size: 40px;
+#five { 
+  position: relative;
   margin-top: 30px;
-  margin-left: 30px;
-  width: 880px;
 }
 
-#one>article>p{
-  border: 5px solid green;
+/* hours of operation */
+#five h1 { 
+  font-size: 40px;
   color: black;
-  font-size: 30px;
-  margin-top: 10px;
-} */
-
-/* #two {
-  display:table;
 }
 
-
-
-#two>article>h3{
-  font-size: 30px;
-  margin-bottom: -90px;
+#p {
+  position: relative;
+  margin-top: 20px;
+  font-size: 50px;
 }
 
-#two>article>p{
-  margin-top: 90px;
-  font-size: 30px;
-  width: 200px;
-}
-
-#two>article{
-  background-color:gray;
-} */
-
-
-
-/* #three{
+#five h2 {
   display: inline-flex;
-} */
+  font-size: 40px;
+  margin-top: 15px;
+}
+
+#five h3 {
+  background-color: slategray;
+  color: white;
+  font-size: 20px;
+  width: max-content;
+  margin-top: 30px;
+}
+
+#five article>p {
+  background-color: slategray;
+  font-size: 20px;
+  margin-bottom: 15px;
+  width: max-content;
+}
