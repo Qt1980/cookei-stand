@@ -105,6 +105,7 @@ nav>img{
 }
 
 #five article>p {
+  font-family: Open Sans Condensed, sans-serif;
   background-color: slategray;
   font-size: 20px;
   margin-bottom: 15px;
